@@ -4,17 +4,12 @@ email: Andres@gamil.com
 image: "/images/avatar.png"
 description: this is meta description
 social:
-  - name: github
-    icon: FaGithub
-    link: https://github.com
-
-  - name: twitter
-    icon: FaTwitter
-    link: https://twitter.com
+  - name: Intagram
+    icon: FaInstagram
+    link: https://www.instagram.com/van.tics/
 
   - name: linkedin
     icon: FaLinkedin
-    link: https://linkedin.com
+    link: https://www.instagram.com/van.tics/
 ---
-
 Desarrollador FrontEnd

@@ -14,16 +14,8 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Contacto",
-          "url": "/contact"
-        },
-        {
           "name": "Autores",
           "url": "/authors"
-        },
-        {
-          "name": "Categorias",
-          "url": "/categories"
         }
       ]
     }

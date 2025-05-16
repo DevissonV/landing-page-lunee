@@ -6,8 +6,7 @@ banner:
   image: "/images/LuneeSoul_Logo.jpeg"
   button:
     enable: false
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/nextplate"
+  
 
 # Features
 features:
@@ -24,8 +23,6 @@ features:
     content: "Vela que inspira paciencia $35.000 COP"
     button:
       enable: false
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/nextplate"
 
   - title: "Vela pacific"
     image: "/images/vela3.jpeg"

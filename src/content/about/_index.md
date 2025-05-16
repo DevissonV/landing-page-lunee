@@ -2,7 +2,7 @@
 title: "Alejandra Franco"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/CEO.jpeg"
+image: "/images/avatar.png"
 draft: true
 ---
 

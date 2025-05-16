@@ -6,8 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+// Puedes definir un tipo reutilizable si lo deseas
+type SiteLogoConfig = {
+  logo: any;
+  logo_darkmode: any;
+  logo_width: any;
+  logo_height: any;
+  logo_text: any;
+  title: any;
+};
+
 const Logo = ({ src }: { src?: string }) => {
-  // destructuring items from config object
+  
+   const site = config.site as unknown as SiteLogoConfig;
+
   const {
     logo,
     logo_darkmode,
@@ -15,14 +27,7 @@ const Logo = ({ src }: { src?: string }) => {
     logo_height,
     logo_text,
     title,
-  }: {
-    logo: string;
-    logo_darkmode: string;
-    logo_width: any;
-    logo_height: any;
-    logo_text: string;
-    title: string;
-  } = config.site;
+  } = site;
 
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);

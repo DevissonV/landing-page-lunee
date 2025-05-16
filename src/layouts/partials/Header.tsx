@@ -2,12 +2,10 @@
 
 import Logo from "@/components/Logo";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
-import { IoSearch } from "react-icons/io5";
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -26,7 +24,6 @@ export interface INavigationLink {
 const Header = () => {
   // distructuring the main menu from menu object
   const { main }: { main: INavigationLink[] } = menu;
-  const { navigation_button, settings } = config;
   // get current path
   const pathname = usePathname();
 
@@ -36,8 +33,8 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header
-      className={`header z-30 ${"sticky top-0"}`}
+    <header 
+      className={`header z-30 ${"sticky top-0"} headerPrincipal`}
     >
       <nav className="navbar container">
         {/* logo */}
@@ -129,15 +126,6 @@ const Header = () => {
           ))}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
-            <button
-              className="border-border text-text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
-              aria-label="search"
-              data-search-trigger
-            >
-              <IoSearch />
-            </button>
-          )}
           <ThemeSwitcher className="mr-5" />
         </div>
       </nav>

@@ -24,13 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed By Vantixx"
-  },
-
-  "navigation_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "copyright": "Designed By VanTICs"
   },
 
   "google_tag_manager": {
