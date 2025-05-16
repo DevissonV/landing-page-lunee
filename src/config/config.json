@@ -5,13 +5,10 @@
     "base_path": "/",
     "trailing_slash": true,
     "favicon": "/images/favicon.png",
-    "title": "Lunee Soul",
-    "title": "Lunee Soul",
     "logo_width": "150",
     "logo_height": "27",
     "logo_text": "Lunee Soul"
   },
-
   "settings": {
     "search": true,
     "sticky_header": true,
@@ -21,23 +18,19 @@
     "summary_length": 200,
     "blog_folder": "blog"
   },
-
   "params": {
     "contact_form_action": "#",
     "copyright": "Designed By VanTICs"
   },
-
   "google_tag_manager": {
     "enable": false,
     "gtm_id": "GTM-XXXXXX"
   },
-
   "disqus": {
     "enable": true,
     "shortname": "themefisher-template",
     "settings": {}
   },
-
   "metadata": {
     "meta_author": "Themefisher",
     "meta_image": "/images/og-image.png",

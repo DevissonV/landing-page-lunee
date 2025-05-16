@@ -1,11 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ImageFallback = (props: any) => {
-  const { src, fallback, ...rest } = props;
+  const { src, fallback, alt = "", ...rest } = props;
   const [imgSrc, setImgSrc] = useState(src);
 
   useEffect(() => {
@@ -13,9 +11,10 @@ const ImageFallback = (props: any) => {
   }, [src]);
 
   return (
-    <Image
+    <img
       {...rest}
       src={imgSrc}
+      alt={alt}
       onError={() => {
         setImgSrc(fallback);
       }}
